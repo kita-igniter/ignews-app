@@ -16,7 +16,9 @@ const customJestConfig = {
   },
   moduleNameMapper: {
     "\\.(scss|css|sass)$": "identity-obj-proxy"
-  }
+  },
+  collectCoverage: true,
+  coverageReporters: ["lcov", "json"]
 }
 
 module.exports = createJestConfig(customJestConfig)
